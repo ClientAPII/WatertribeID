@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tribe ID Card Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css" />
+</head>
+<body>
+    <header>
+        <h1>Water Tribe ID Card Creator</h1>
+    </header>
+    <div class="container">
+        <div class="editor">
+            <div class="card-preview">
+                <canvas id="idCardCanvas"></canvas>
+            </div>
+            <form id="idCardForm">
+                <div class="form-group">
+                    <label for="rpn">RPN:</label>
+                    <input type="text" id="rpn" name="rpn" value="RPN">
+                </div>
+
+                <div class="form-group">
+                    <label for="birthYear">Birth Year:</label>
+                    <input type="text" id="birthYear" name="birthYear" value="Birth Year">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender" name="gender" value="Gender">
+                </div>
+
+                <div class="form-group">
+                    <label for="cardId">Card ID No:</label>
+                    <input type="text" id="cardId" name="cardId" value="Card ID No">
+                </div>
+
+                <div class="form-group">
+                    <label for="element">Element:</label>
+                    <input type="text" id="element" name="element" value="Element">
+                </div>
+
+                <div class="form-group">
+                    <label for="subelement">Subelement:</label>
+                    <input type="text" id="subelement" name="subelement" value="Subelement">
+                </div>
+
+                <div class="form-group">
+                    <label for="rank">Rank:</label>
+                    <input type="text" id="rank" name="rank" value="Rank">
+                </div>
+
+                <div class="form-group">
+                    <label for="housing">Housing:</label>
+                    <input type="text" id="housing" name="housing" value="Housing">
+                </div>
+
+                <div class="form-group">
+                    <label for="ign">IGN:</label>
+                    <input type="text" id="ign" name="ign" value="IGN">
+                </div>
+
+                <div class="form-group">
+                    <label for="minorOrAdult">Minor or Adult IRL:</label>
+                    <input type="text" id="minorOrAdult" name="minorOrAdult" value="Adult or Minor">
+                </div>
+
+                <div class="form-group">
+                    <label for="sealSelect">Select Seal:</label>
+                    <select id="sealSelect">
+                        <option>Select Seal</option>
+                        <option value="normal">Normal Civilian</option>
+                        <option value="military">Military</option>
+                        <option value="hro">HRO</option>
+                        <option value="royalty">Royalty</option>
+                        <option value="bloodbender">Bloodbender</option>
+                        <option value="dead">Dead</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="uploadImage">Upload Image:</label>
+                    <input type="file" id="uploadImage" accept="image/*">
+                </div>
+
+                <div class="form-group image-editor" id="imageEditorModal">
+                    <div id="croppieContainer"></div>
+                    <button type="button" id="cropImageBtn">Crop Image</button>
+                </div>
+
+                <button type="button" id="downloadBtn">Download ID Card</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
