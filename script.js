@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
     seals.normal.src = 'seals/Normal_Seal.png';  // Path to Normal Seal
     seals.military.src = 'seals/Military_seal.png';  // Path to Military Seal
     seals.hro.src = 'seals/HRO_seal.png';  // Path to HRO Seal
-    seals.royalty.src = 'seals/Royalty_seal.png';  // Path to Royalty Seal
-    seals.bloodbender.src = 'seals/Blood_seal.png';  // Path to Bloodbender Seal
-    seals.dead.src = 'seals/Dead_seal.png';  // Path to Dead Seal
+    seals.royalty.src = 'seals/Royalty_Seal.png';  // Path to Royalty Seal
+    seals.bloodbender.src = 'seals/Blood_Seal.png';  // Path to Bloodbender Seal
+    seals.dead.src = 'seals/Dead_Seal.png';  // Path to Dead Seal
 
     // Object storing positions and sizes for each seal
     const sealPositions = {
