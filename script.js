@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const rankX = 154;
         const rankY = 424;
         const lineHeight = 18;
+        let userImage = null;
 
         const rankLines = wrapText(ctx, rank, rankX, rankY, rankMaxWidth, lineHeight);
         rankLines.forEach((line, index) => {
@@ -172,6 +173,15 @@ document.addEventListener("DOMContentLoaded", function() {
         link.click();
     });
 
-
-    updateIDCard();
+    document.getElementById('copyBtn').addEventListener('click', function() {
+        updateIDCard();
+        canvas.toBlob(function(blob) {
+            const item = new ClipboardItem({ 'image/png': blob });
+            navigator.clipboard.write([item]).then(() => {
+                //alert('ID Card copied to clipboard!');
+            }).catch(err => {
+                //alert('Failed to copy ID Card.');
+            });
+        });
+    });
 });
