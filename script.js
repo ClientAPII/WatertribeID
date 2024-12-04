@@ -138,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const rankX = 154;
         const rankY = 424;
         const lineHeight = 18;
-        let userImage = null;
 
         const rankLines = wrapText(ctx, rank, rankX, rankY, rankMaxWidth, lineHeight);
         rankLines.forEach((line, index) => {
